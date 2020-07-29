@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Basic&display=swap');
+body, html {
+    height: 100%;
+    /* font-family: 'Gentium Book Basic', serif; */
+    font-family: 'Lato', serif;
+}
+
+.header {
+    position: relative;
+    width: 100%;
+    background-color: #BF0413;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header h1 {
+    margin: 0;
+    padding: 20px;
+}
+
+.header nav {
+    position: relative;
+    right: 25px;
+}
+
+.header ul {
+    list-style: none;
+}
+
+.header li {
+    position: relative;
+    display: inline;
+    margin: 0px 14px;
+}
+
+.header li:after {
+    content: '.';
+    position: absolute;
+    margin-left: 7.5px;
+    margin-top: -16px;
+    font-size: 30px;
+}
+
+.header li:nth-last-child(1)::after {
+    content: '';
+}
+
+.header a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: .3s;
+}
+
+.header a:hover {
+    padding-bottom: 5px;
+    border-bottom: 3px solid white;
+}
+
+.hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/reading.jpg");
+    height: 90%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 35px;
+}
+
+.experience {
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.figure {
+    margin: 0;
+    width: 50%;
+}
+
+.figure img {
+    display: block;
+    margin: auto;
+    width: 320px;
+}
+
+.experience-detail {
+    display: block;
+    margin: auto;
+    width: 50%;
+}
+
+.experience-detail h2 {
+    font-size: 30px;
+    letter-spacing: 2px;
+}
+
+.experience-detail hr {
+    width: 300px;
+    margin: 0;
+    border: 1.5px solid black;
+    margin-bottom: 30px;
+}
+
+.experience-detail p {
+    font-size: 18px;
+    width: 70%;
+    margin-bottom: 12px;
+}
+
+.experience-detail h3 {
+    background-color: #e6d65e;
+    display: inline-block;
+    padding: 5px 10px;
+    font-size: 25px;
+    margin-bottom: -5px;
+}
+
+.wrapper {
+    width: 100%;
+    height: 420px;
+    background-color: #F20505;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.wrap {
+    width: 25%;
+    height: 70%;
+    text-align: center;
+}
+
+.wrap h2 {
+    margin: 0;
+    margin-bottom: 45px;
+    letter-spacing: 2px;
+}
+
+.wrap span {
+    font-size: 70px;
+    /* display: inline-block; */
+    position: absolute;
+    background-color: #F20505;
+    margin-left: -35px;
+    margin-top: -38px;
+}
+
+.wrap div {
+    border: 5px solid white;
+    height: 70%;
+    border-radius: 5px;
+    padding: 12px;
+}
+
+.wrap p {
+    font-size: 20px;
+    padding-bottom: 50px;
+    margin-top: 25px;
+}
+
+.book-figure {
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.book-figure img {
+    width: 150px;
+    height: 230px;
+    box-shadow: 0px 1px 2px #333, 1px 2px 3px #333, 2px 3px 4px #333;
+}
+
+.book-figure img:nth-child(2n) {
+    margin-top: 20px;
+    margin-left: -50px;
+}
+
+.book-figure img:nth-child(2n+1) {
+    margin-top: -20px;
+    margin-left: 35px;
+}
+
+.book-detail {
+    position: relative;
+    left: 150px;
+}
+
+.book-detail h2 {
+    font-size: 32px;
+}
+
+.book-detail p {
+    font-size: 20px;
+}
+
+.book-detail span {
+    background-color: #e6d65e;
+    padding: 2px;
+    font-weight: 600;
+}
+
+.quote {
+    width: 100%;
+    height: 220px;
+    background-color: #A2A63F;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: 'Gentium Book Basic', serif;
+}
+
+.quote p {
+    width: 50%;
+    margin: 0;
+    font-size: 24px;
+    font-style: italic;
+}
+
+.quote p::before {
+    content: '"';
+}
+
+.quote p::after {
+    content: '"';
+}
+
+.quote span {
+    font-size: 35px;
+}
+
+.quote span::before {
+    content: '-';
+    font-size: 50px;
+    font-weight: 300;
+    margin-top: 40px;
+}
+
+.search {
+    width: 100%;
+    height: 425px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search div {
+    width: 40%;
+}
+
+.search h2 {
+    font-size: 35px;
+    margin: 10px;
+}
+
+.search p {
+    font-size: 20px;
+    margin: 30px 10px;
+}
+
+.search button {
+    width: 200px;
+    height: 60px;
+    border-style: none;
+    outline: none;
+    cursor: pointer;
+    border: 3px solid #a2ad39;
+    border-radius: 5px;
+    background-color: transparent;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 800;
+    color: #A2ad39;
+    letter-spacing: 2px;
+    transition: .3s;
+}
+
+.search button:hover {
+    background-color: #a2ad39;
+    color: white;
+}
+
+.footer {
+    width: 100%;
+    height: 100px;
+    background-color: #590202;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    letter-spacing: 1px;
+}
+
+.footer h2 {
+    margin: 0;
+    color: white;
+}
+
+.footer p {
+    color: white;
+    font-size: 18px;
+}
+
+.footer span {
+    color: crimson;
+}
+
+.contact a {
+    font-size: 40px;
+    margin: 0 10px;
+    font-style: none;
+    color: white;
+}
