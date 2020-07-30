@@ -7,14 +7,15 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/normalize.css">
     <script src="https://kit.fontawesome.com/253385104e.js" crossorigin="anonymous"></script>
-    <script src="./main.js"></script>
+    <!-- <script src="./main.js"></script> -->
     <title>Search Books</title>
 </head>
 
 <body>
+    <i id="burger-menu" class="fas fa-bars burger-button"></i>
     <header class="header">
-        <h1>Searck Books</h1>
-        <nav>
+        <h1><a href="index.html"> Searck Books</a></h1>
+        <nav class="menu" id="menu">
             <ul>
                 <li>
                     <a href="#experience">La experiencia</a>
@@ -23,7 +24,7 @@
                     <a href="#book">El libro</a>
                 </li>
                 <li>
-                    <a href="#searching">Buscar ahora</a>
+                    <a href="search.html">Buscar ahora</a>
                 </li>
             </ul>
         </nav>
@@ -33,7 +34,7 @@
             <h1>Vuélvete a emocionar leyendo</h1>
         </div>
     </section>
-    <section class="experience" id="experience">
+   <section class="experience" id="experience">
         <figure class="experience-book figure">
             <img src="./img/experence.jpg" alt="read">
         </figure>
@@ -107,7 +108,7 @@
         <div>
             <h2>¡Sumérgete en este mundo lleno de historias inolvidables!</h2>
             <p>Miles de historias esperando deslumbrarte; ¿qué mejor momento que este?</p>
-            <button id="search">Buscar ahora</button>
+           <a href="search.html" id="search"> Buscar ahora</a>
         </div>
     </div>
     <footer class="footer">
@@ -117,7 +118,21 @@
             <a href="https://github.com/Yeimy7"><i class="fab fa-github"></i></a>
             <a href="https://twitter.com/Yeimy_Briela"><i class="fab fa-twitter-square"></i></a>
         </div>
-    </footer>
+    </footer> 
+    <script>
+        const menu = document.querySelector('.menu');
+        const burger = document.querySelector('#burger-menu');
+        burger.addEventListener('click', hideShow)
+
+        function hideShow() {
+            if (menu.classList.contains('is-active')) {
+                menu.classList.remove('is-active');
+            } else {
+                menu.classList.add('is-active');
+            }
+
+        }
+    </script>
 </body>
 
 </html>
